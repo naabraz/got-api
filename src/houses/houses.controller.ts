@@ -7,7 +7,7 @@ export class HousesController {
   constructor(private readonly housesService: HousesService) {}
 
   @Get('houses')
-  getHouses(): Array<string> {
+  getHouses(): Array<Object> {
     return this.housesService.getHouses();
   }
 }
