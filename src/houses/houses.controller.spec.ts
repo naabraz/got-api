@@ -17,7 +17,11 @@ describe('Houses Controller', () => {
 
   describe('Houses list', () => {
     it('Should return a list with all of Game of Thrones houses', () => {
-      expect(housesController.getHouses()).toMatchObject(['Targaryen', 'Stark', 'Lannister'])
+      expect(housesController.getHouses()).toMatchObject([
+        { id: 1, name: 'Targaryen'}, 
+        { id: 2, name: 'Stark' }, 
+        { id: 3, name: 'Lannister'}
+      ])
     });
   });
 });
